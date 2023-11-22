@@ -1,3 +1,10 @@
+//
+//  Trailers.swift
+//  MovieDatabase
+//
+//  Created by arturs.olekss on 22/11/2023.
+//
+
 import Foundation
 
 // MARK: - Trailers
@@ -27,3 +34,4 @@ struct Trailer: Codable {
         case id
     }
 }
+

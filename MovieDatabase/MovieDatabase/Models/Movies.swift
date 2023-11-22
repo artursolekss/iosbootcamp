@@ -1,4 +1,13 @@
+//
+//  Movies.swift
+//  MovieDatabase
+//
+//  Created by arturs.olekss on 22/11/2023.
+//
+
 import Foundation
+
+
 
 // MARK: - Movies
 struct Movies: Codable {

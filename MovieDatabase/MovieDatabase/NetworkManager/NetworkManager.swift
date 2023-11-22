@@ -1,4 +1,12 @@
+//
+//  NetworkManager.swift
+//  MovieDatabase
+//
+//  Created by arturs.olekss on 22/11/2023.
+//
+
 import Foundation
+
 
 class NetworkManager {
     
@@ -122,3 +130,4 @@ class NetworkManager {
         }.resume()
     }//fetchMovieTrailer
 }
+

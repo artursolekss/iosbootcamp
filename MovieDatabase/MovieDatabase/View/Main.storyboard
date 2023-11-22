@@ -95,8 +95,11 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="ratingLabel" destination="uSB-Qj-hCl" id="O5s-52-57z"/>
-                                            <outlet property="titleLabel" destination="2qx-24-zGX" id="v0A-YR-cZO"/>
+                                            <outlet property="overviewLabel" destination="ZvK-Mg-WiE" id="YI2-Vw-7lc"/>
+                                            <outlet property="posterImageView" destination="vJ2-hW-hc3" id="Ese-hv-0K2"/>
+                                            <outlet property="ratingLabel" destination="uSB-Qj-hCl" id="xDU-6P-Jbt"/>
+                                            <outlet property="releaseDateLabel" destination="ard-aR-98H" id="W4Z-jb-h8e"/>
+                                            <outlet property="titleLabel" destination="2qx-24-zGX" id="Bbr-jX-i70"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -120,6 +123,10 @@
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="homeTableView" destination="8ho-1O-HWW" id="5Y9-4c-cct"/>
+                        <outlet property="loadingView" destination="iUB-B9-ABj" id="6fd-5K-QrL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vel-rC-O8S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
