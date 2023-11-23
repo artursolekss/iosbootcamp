@@ -73,7 +73,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         
         if movie.voteAverage != 0.0 {
             cell.ratingLabel.isHidden = false
-//            cell.ratingLabel.text = Constants.Icon.rating + movie.voteAverage.stringValue
+            cell.ratingLabel.text = Constants.Icon.rating + String(format: "%f", movie.voteAverage!)
         }else{
             cell.ratingLabel.isHidden = true
         }
@@ -83,6 +83,10 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         cell.selectionStyle = .none
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return Constants.RowHeight.homeTableViewCell
     }
 }
 
