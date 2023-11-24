@@ -345,6 +345,10 @@
                             <color key="tintColor" systemColor="systemRedColor"/>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="emptyWatchlistButton" destination="PdY-vZ-y1N" id="oTX-zB-ZFG"/>
+                        <outlet property="watchListTableView" destination="Jc7-7D-gOj" id="HMb-Ga-EVc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gLP-nD-eDI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -616,7 +620,7 @@
                         <outlet property="ratingLabel" destination="gUz-Wc-uP5" id="oQ4-MN-d3c"/>
                         <outlet property="releaseDateLabel" destination="vaH-dR-lcN" id="FkK-di-tUG"/>
                         <outlet property="runtimeLabel" destination="6rT-Ss-9Nm" id="8vj-0Q-Sit"/>
-                        <outlet property="titleLabel" destination="Nee-XJ-Teg" id="GEA-Ol-qIc"/>
+                        <outlet property="titleLabel" destination="Nee-XJ-Teg" id="sMh-qO-p05"/>
                         <outlet property="watchTrailerButton" destination="IQD-n4-FhL" id="KoE-NR-QmH"/>
                     </connections>
                 </viewController>

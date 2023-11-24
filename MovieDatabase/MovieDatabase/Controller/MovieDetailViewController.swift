@@ -28,9 +28,9 @@ class MovieDetailViewController: UIViewController {
     var movieId: String = String()
     
     
-    var watchlistMovies: [MovieItems] = []
+    private var watchlistMovies: [MovieItems] = []
     
-    var context: NSManagedObjectContext?
+    private var context: NSManagedObjectContext?
     
     override func viewDidLoad() {
         super.viewDidLoad()
