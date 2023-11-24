@@ -23,6 +23,11 @@
 		6DE4EF562B0E72F0008DA837 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE4EF552B0E72F0008DA837 /* MovieTableViewCell.swift */; };
 		6DE4EF592B0E74CA008DA837 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 6DE4EF582B0E74CA008DA837 /* SDWebImage */; };
 		6DE4EF5B2B0E74CA008DA837 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6DE4EF5A2B0E74CA008DA837 /* SDWebImageMapKit */; };
+		6DE4EF602B10D816008DA837 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE4EF5F2B10D816008DA837 /* MovieDetailViewController.swift */; };
+		6DE4EF632B10D915008DA837 /* BounceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE4EF622B10D915008DA837 /* BounceButton.swift */; };
+		6DE4EF662B10DAAF008DA837 /* MovieDatabase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6DE4EF642B10DAAF008DA837 /* MovieDatabase.xcdatamodeld */; };
+		6DE4EF692B11029C008DA837 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE4EF682B11029C008DA837 /* Extensions.swift */; };
+		6DE4EF6B2B110332008DA837 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE4EF6A2B110332008DA837 /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +47,11 @@
 		6DE4EF512B0E6F8B008DA837 /* MovieDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetails.swift; sourceTree = "<group>"; };
 		6DE4EF532B0E6F9D008DA837 /* Trailers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trailers.swift; sourceTree = "<group>"; };
 		6DE4EF552B0E72F0008DA837 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		6DE4EF5F2B10D816008DA837 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
+		6DE4EF622B10D915008DA837 /* BounceButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BounceButton.swift; sourceTree = "<group>"; };
+		6DE4EF652B10DAAF008DA837 /* MovieDatabase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MovieDatabase.xcdatamodel; sourceTree = "<group>"; };
+		6DE4EF682B11029C008DA837 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		6DE4EF6A2B110332008DA837 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +86,8 @@
 		6DE4EF1F2B0DE788008DA837 /* MovieDatabase */ = {
 			isa = PBXGroup;
 			children = (
+				6DE4EF672B11028C008DA837 /* Extensions */,
+				6DE4EF612B10D906008DA837 /* Additional */,
 				6DE4EF4E2B0E6EAE008DA837 /* Utilities */,
 				6DE4EF4B2B0E6E2B008DA837 /* NetworkManager */,
 				6DE4EF482B0E6DED008DA837 /* Models */,
@@ -84,6 +96,7 @@
 				6DE4EF342B0DE794008DA837 /* AppDelegate */,
 				6DE4EF292B0DE78B008DA837 /* Assets.xcassets */,
 				6DE4EF2E2B0DE78B008DA837 /* Info.plist */,
+				6DE4EF642B10DAAF008DA837 /* MovieDatabase.xcdatamodeld */,
 			);
 			path = MovieDatabase;
 			sourceTree = "<group>";
@@ -113,6 +126,8 @@
 				6DE4EF402B0E1163008DA837 /* SearchViewController.swift */,
 				6DE4EF422B0E11B4008DA837 /* WatchlistViewController.swift */,
 				6DE4EF552B0E72F0008DA837 /* MovieTableViewCell.swift */,
+				6DE4EF5F2B10D816008DA837 /* MovieDetailViewController.swift */,
+				6DE4EF6A2B110332008DA837 /* WebViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -141,6 +156,22 @@
 				6DE4EF4F2B0E6EC4008DA837 /* Constants.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		6DE4EF612B10D906008DA837 /* Additional */ = {
+			isa = PBXGroup;
+			children = (
+				6DE4EF622B10D915008DA837 /* BounceButton.swift */,
+			);
+			path = Additional;
+			sourceTree = "<group>";
+		};
+		6DE4EF672B11028C008DA837 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6DE4EF682B11029C008DA837 /* Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,16 +253,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DE4EF252B0DE788008DA837 /* HomeViewController.swift in Sources */,
+				6DE4EF662B10DAAF008DA837 /* MovieDatabase.xcdatamodeld in Sources */,
 				6DE4EF542B0E6F9D008DA837 /* Trailers.swift in Sources */,
 				6DE4EF432B0E11B4008DA837 /* WatchlistViewController.swift in Sources */,
 				6DE4EF4A2B0E6E03008DA837 /* Movies.swift in Sources */,
+				6DE4EF602B10D816008DA837 /* MovieDetailViewController.swift in Sources */,
 				6DE4EF4D2B0E6E50008DA837 /* NetworkManager.swift in Sources */,
+				6DE4EF632B10D915008DA837 /* BounceButton.swift in Sources */,
 				6DE4EF212B0DE788008DA837 /* AppDelegate.swift in Sources */,
 				6DE4EF412B0E1163008DA837 /* SearchViewController.swift in Sources */,
+				6DE4EF692B11029C008DA837 /* Extensions.swift in Sources */,
 				6DE4EF232B0DE788008DA837 /* SceneDelegate.swift in Sources */,
 				6DE4EF502B0E6EC4008DA837 /* Constants.swift in Sources */,
 				6DE4EF562B0E72F0008DA837 /* MovieTableViewCell.swift in Sources */,
 				6DE4EF522B0E6F8B008DA837 /* MovieDetails.swift in Sources */,
+				6DE4EF6B2B110332008DA837 /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +504,20 @@
 			productName = SDWebImageMapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		6DE4EF642B10DAAF008DA837 /* MovieDatabase.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6DE4EF652B10DAAF008DA837 /* MovieDatabase.xcdatamodel */,
+			);
+			currentVersion = 6DE4EF652B10DAAF008DA837 /* MovieDatabase.xcdatamodel */;
+			name = MovieDatabase.xcdatamodeld;
+			path = "../../../../ios_dev/MovieDatabase-main/MovieDatabase/MovieDatabase.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 6DE4EF152B0DE788008DA837 /* Project object */;
 }
