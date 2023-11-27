@@ -28,6 +28,7 @@
 		6DE4EF662B10DAAF008DA837 /* MovieDatabase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6DE4EF642B10DAAF008DA837 /* MovieDatabase.xcdatamodeld */; };
 		6DE4EF692B11029C008DA837 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE4EF682B11029C008DA837 /* Extensions.swift */; };
 		6DE4EF6B2B110332008DA837 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE4EF6A2B110332008DA837 /* WebViewController.swift */; };
+		6DE4EF6F2B14E354008DA837 /* WatchlistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE4EF6E2B14E354008DA837 /* WatchlistTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		6DE4EF652B10DAAF008DA837 /* MovieDatabase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MovieDatabase.xcdatamodel; sourceTree = "<group>"; };
 		6DE4EF682B11029C008DA837 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		6DE4EF6A2B110332008DA837 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		6DE4EF6E2B14E354008DA837 /* WatchlistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 				6DE4EF552B0E72F0008DA837 /* MovieTableViewCell.swift */,
 				6DE4EF5F2B10D816008DA837 /* MovieDetailViewController.swift */,
 				6DE4EF6A2B110332008DA837 /* WebViewController.swift */,
+				6DE4EF6E2B14E354008DA837 /* WatchlistTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				6DE4EF4D2B0E6E50008DA837 /* NetworkManager.swift in Sources */,
 				6DE4EF632B10D915008DA837 /* BounceButton.swift in Sources */,
 				6DE4EF212B0DE788008DA837 /* AppDelegate.swift in Sources */,
+				6DE4EF6F2B14E354008DA837 /* WatchlistTableViewCell.swift in Sources */,
 				6DE4EF412B0E1163008DA837 /* SearchViewController.swift in Sources */,
 				6DE4EF692B11029C008DA837 /* Extensions.swift in Sources */,
 				6DE4EF232B0DE788008DA837 /* SceneDelegate.swift in Sources */,

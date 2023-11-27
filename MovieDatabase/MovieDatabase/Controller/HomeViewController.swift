@@ -8,8 +8,8 @@
 import UIKit
 import SDWebImage
 
-class HomeViewController: UIViewController {
-
+class HomeViewController: UIViewController{
+    
     private var movies:[Movie] = []
     
     @IBOutlet weak var loadingView: UIActivityIndicatorView!
@@ -20,7 +20,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         getMovies(url: Constants.API.popularMoviesUrl)
     }
-
+    
     private func getMovies(url:String){
         
         NetworkManager.fetchMovies(url:url){
@@ -28,14 +28,14 @@ class HomeViewController: UIViewController {
             self.movies = movies.results ?? []
             DispatchQueue.main.sync{
                 self.homeTableView.reloadData()
-        
+                
             }
             
         }
         
     }
     
-
+    
 }
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {

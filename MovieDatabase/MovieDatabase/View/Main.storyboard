@@ -213,6 +213,13 @@
                                                 <constraint firstItem="THy-rI-xrX" firstAttribute="leading" secondItem="nh8-gr-1p3" secondAttribute="trailing" constant="8" symbolic="YES" id="pWE-ba-1bo"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="overviewLabel" destination="HYb-PS-ESO" id="o9V-wL-jx7"/>
+                                            <outlet property="posterImageView" destination="nh8-gr-1p3" id="YFj-Pf-6jA"/>
+                                            <outlet property="ratingLabel" destination="KXg-FT-53Z" id="hbc-xM-t1M"/>
+                                            <outlet property="releaseDateLabel" destination="o44-IW-Iu3" id="eMt-7Q-c88"/>
+                                            <outlet property="titleLabel" destination="VUo-Ll-0aO" id="L36-r2-Ncz"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -231,6 +238,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Search" id="UdL-at-AGW"/>
+                    <connections>
+                        <outlet property="searchTableView" destination="VKM-u5-Xiv" id="sQr-vu-wAN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nwq-A5-nUs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -317,11 +327,11 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="posterImageView" destination="YhW-LT-yom" id="eDS-L6-jr8"/>
-                                            <outlet property="ratingLabel" destination="P6h-TX-R0V" id="ePD-zY-B6z"/>
-                                            <outlet property="releaseDateLabel" destination="bA0-GP-Gzp" id="Ru8-X9-TLA"/>
-                                            <outlet property="runtimeLabel" destination="46F-DJ-Xi0" id="Yju-5B-jt1"/>
-                                            <outlet property="titleLabel" destination="dBc-A5-45V" id="6Xr-l7-tgV"/>
+                                            <outlet property="posterImageView" destination="YhW-LT-yom" id="aeD-1g-FTx"/>
+                                            <outlet property="ratingLabel" destination="P6h-TX-R0V" id="iK5-Ov-SWQ"/>
+                                            <outlet property="releaseDate" destination="bA0-GP-Gzp" id="Apx-n5-i5j"/>
+                                            <outlet property="runtimeLabel" destination="46F-DJ-Xi0" id="5iv-SO-ySQ"/>
+                                            <outlet property="titleLabel" destination="dBc-A5-45V" id="vbS-kq-CRF"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -343,6 +353,9 @@
                     <navigationItem key="navigationItem" title="Watchlist" id="pub-wg-UdW">
                         <barButtonItem key="rightBarButtonItem" image="trash.fill" catalog="system" id="PdY-vZ-y1N">
                             <color key="tintColor" systemColor="systemRedColor"/>
+                            <connections>
+                                <action selector="emptyWatchListTapped:" destination="hJj-NC-Tza" id="W2t-3n-ZxA"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
